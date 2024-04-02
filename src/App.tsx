@@ -1,6 +1,8 @@
 import { CircularProgress, Stack, Typography } from '@mui/material'
 import { useEffect, useState } from 'react'
 
+import { CalendarInput } from './components/ui-elements/Input/Calendar'
+
 export default function App() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [data, setData] = useState<any>(null)
@@ -22,6 +24,7 @@ export default function App() {
       <Typography variant="body1">fetch example</Typography>
       {isLoading && <CircularProgress />}
       {data && <code>{JSON.stringify(data, null, 2)}</code>}
+      <CalendarInput />
     </Stack>
   )
 }
