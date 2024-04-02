@@ -1,4 +1,4 @@
-import { ListAlt, Logout, Sms, Store } from "@mui/icons-material";
+import { ListAlt, Logout, Sms, Store } from '@mui/icons-material'
 import {
   Box,
   Divider,
@@ -9,18 +9,18 @@ import {
   ListItemText,
   ListSubheader,
   Stack,
-} from "@mui/material";
+} from '@mui/material'
 
-import AccountLabel from "../AccountLabel";
+import AccountLabel from '../AccountLabel'
 
-import ListItemLink from "./LinkListItem";
+import ListItemLink from './LinkListItem'
 
 type Props = {
-  drawerWidth?: number;
-  salesOffice: string;
-  accountName: string;
-  onLogout: () => void;
-};
+  drawerWidth?: number
+  salesOffice: string
+  accountName: string
+  onLogout: () => void
+}
 
 export const SideBar: React.FC<Props> = ({
   drawerWidth = 300,
@@ -34,7 +34,7 @@ export const SideBar: React.FC<Props> = ({
       anchor="left"
       sx={{ width: drawerWidth, flexShrink: 0 }}
     >
-      <Stack sx={{ width: drawerWidth, height: "100%" }}>
+      <Stack sx={{ width: drawerWidth, height: '100%' }}>
         {/* TODO: ロゴの追jか */}
         {/* <Box px={2} py={1}>
           <HonsyuLogo />
@@ -42,7 +42,7 @@ export const SideBar: React.FC<Props> = ({
         <Stack
           padding={1}
           divider={<Divider flexItem />}
-          sx={{ flexDirection: "column", flexGrow: 1 }}
+          sx={{ flexDirection: 'column', flexGrow: 1 }}
         >
           <Box padding={2}>
             <AccountLabel salesOffice={salesOffice} accountName={accountName} />
@@ -83,5 +83,5 @@ export const SideBar: React.FC<Props> = ({
         </List>
       </Stack>
     </Drawer>
-  );
-};
+  )
+}

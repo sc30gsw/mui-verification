@@ -5,12 +5,12 @@
  * @returns 環境変数の値
  */
 export const mustGetEnv = (key: string) => {
-  const value = import.meta.env[key];
-  if (typeof value !== "string") {
-    throw new Error(`${key} should be defined`);
+  const value = import.meta.env[key]
+  if (typeof value !== 'string') {
+    throw new Error(`${key} should be defined`)
   }
-  return value;
-};
+  return value
+}
 
 /**
  * boolean型の環境変数を取得する
@@ -20,9 +20,9 @@ export const mustGetEnv = (key: string) => {
  * @returns 環境変数の値（boolean型）。取得できなかった場合は `defaultValue`
  */
 export const getBooleanEnv = (key: string, defaultValue: boolean) => {
-  const value = import.meta.env[key];
-  if (typeof value !== "string") {
-    return defaultValue;
+  const value = import.meta.env[key]
+  if (typeof value !== 'string') {
+    return defaultValue
   }
-  return value === "TRUE";
-};
+  return value === 'TRUE'
+}

@@ -1,15 +1,15 @@
-import { Box, Typography } from "@mui/material";
-import { withRouter } from "storybook-addon-remix-react-router";
+import { Box, Typography } from '@mui/material'
+import { withRouter } from 'storybook-addon-remix-react-router'
 
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react'
 
-import { MainLayout } from ".";
+import { MainLayout } from '.'
 
 export default {
   component: MainLayout,
-} satisfies Meta<typeof MainLayout>;
+} satisfies Meta<typeof MainLayout>
 
-type Story = StoryObj<typeof MainLayout>;
+type Story = StoryObj<typeof MainLayout>
 
 export const Default: Story = {
   render: () => (
@@ -20,7 +20,7 @@ export const Default: Story = {
     </MainLayout>
   ),
   decorators: [withRouter],
-};
+}
 
 export const Fullscreen: Story = {
   ...Default,
@@ -32,4 +32,4 @@ export const Fullscreen: Story = {
       </Box>
     </MainLayout>
   ),
-};
+}

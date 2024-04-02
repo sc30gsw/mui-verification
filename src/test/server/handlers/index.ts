@@ -1,5 +1,5 @@
-import { pingHandlers } from "./ping";
+import { pingHandlers } from './ping'
 
-const handlers = [...pingHandlers];
+const handlers = [...pingHandlers]
 
-export default handlers;
+export default handlers

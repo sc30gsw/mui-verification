@@ -1,10 +1,10 @@
-import { Stack, Typography, styled } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Stack, Typography, styled } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const CenteredStack = styled(Stack)({
-  justifyContent: "center",
-  alignItems: "center",
-});
+  justifyContent: 'center',
+  alignItems: 'center',
+})
 
 export function NotFoundPage() {
   return (
@@ -21,5 +21,5 @@ export function NotFoundPage() {
         </Typography>
       </CenteredStack>
     </CenteredStack>
-  );
+  )
 }

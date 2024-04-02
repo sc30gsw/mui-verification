@@ -1,23 +1,23 @@
-import { Box, CircularProgress } from '@mui/material';
+import { Box, CircularProgress } from '@mui/material'
 
 type Props = {
   /**
    * @description ローディングをフルスクリーンで表示するかどうか
    * @default false
    */
-  fullscreen?: boolean;
+  fullscreen?: boolean
   /**
    * @description ローディングサークルのサイズ
    * @default 36
    */
-  size?: number;
-};
+  size?: number
+}
 
 /**
  * @description ローディングを表示する
  */
 export default function LoadingDisplay(props: Props) {
-  const { fullscreen = false, size = 36 } = props;
+  const { fullscreen = false, size = 36 } = props
 
   if (fullscreen) {
     return (
@@ -35,7 +35,7 @@ export default function LoadingDisplay(props: Props) {
       >
         <CircularProgress size={size} />
       </Box>
-    );
+    )
   }
 
   return (
@@ -47,5 +47,5 @@ export default function LoadingDisplay(props: Props) {
     >
       <CircularProgress size={size} />
     </Box>
-  );
+  )
 }

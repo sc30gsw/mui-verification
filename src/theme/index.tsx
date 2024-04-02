@@ -1,8 +1,8 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles'
 
-import RenderDayColored from "./RenderDayColored";
+import RenderDayColored from './RenderDayColored'
 
-import type {} from "@mui/x-date-pickers/themeAugmentation";
+import type {} from '@mui/x-date-pickers/themeAugmentation'
 
 export const baseTheme = createTheme({
   typography: {
@@ -12,13 +12,13 @@ export const baseTheme = createTheme({
   components: {
     MuiDatePicker: {
       defaultProps: {
-        format: "yyyy/MM/dd",
-        orientation: "portrait",
+        format: 'yyyy/MM/dd',
+        orientation: 'portrait',
         slotProps: {
-          toolbar: { toolbarPlaceholder: "__", toolbarFormat: "yyyy年M月dd日" },
+          toolbar: { toolbarPlaceholder: '__', toolbarFormat: 'yyyy年M月dd日' },
         },
         slots: { day: RenderDayColored },
       },
     },
   },
-});
+})

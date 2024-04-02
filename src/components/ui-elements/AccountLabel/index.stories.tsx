@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react'
 
-import AccountLabel from ".";
+import AccountLabel from '.'
 
 export default {
   component: AccountLabel,
-} satisfies Meta<typeof AccountLabel>;
+} satisfies Meta<typeof AccountLabel>
 
-type Story = StoryObj<typeof AccountLabel>;
+type Story = StoryObj<typeof AccountLabel>
 
 export const Default: Story = {
   render: () => (
-    <AccountLabel salesOffice={"大阪営業所"} accountName={"田中太郎"} />
+    <AccountLabel salesOffice={'大阪営業所'} accountName={'田中太郎'} />
   ),
-};
+}

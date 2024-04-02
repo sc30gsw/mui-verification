@@ -1,17 +1,17 @@
-import { withRouter } from "storybook-addon-remix-react-router";
+import { withRouter } from 'storybook-addon-remix-react-router'
 
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react'
 
-import { NotFoundPage } from ".";
+import { NotFoundPage } from '.'
 
 export default {
   component: NotFoundPage,
   decorators: [withRouter],
   parameters: {
-    layout: "fullscreen",
+    layout: 'fullscreen',
   },
-} satisfies Meta<typeof NotFoundPage>;
+} satisfies Meta<typeof NotFoundPage>
 
-type Story = StoryObj<typeof NotFoundPage>;
+type Story = StoryObj<typeof NotFoundPage>
 
-export const Default: Story = {};
+export const Default: Story = {}

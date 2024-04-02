@@ -2,16 +2,16 @@
  * React Router ルーティング定義
  * cf. https://reactrouter.com/en/main/routers/create-browser-router
  */
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from 'react-router-dom'
 
-import App from "../App";
-import { MainLayout } from "../components/layouts/MainLayout";
-import { NotFoundPage } from "../components/pages/NotFoundPage";
-import { EstimateListPage } from "../features/estimates/estimate-list/components";
+import App from '../App'
+import { MainLayout } from '../components/layouts/MainLayout'
+import { NotFoundPage } from '../components/pages/NotFoundPage'
+import { EstimateListPage } from '../features/estimates/estimate-list/components'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: (
       <MainLayout>
         <App />
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/estimates",
+    path: '/estimates',
     element: (
       <MainLayout>
         <EstimateListPage />
@@ -28,9 +28,9 @@ const router = createBrowserRouter([
     children: [{}],
   },
   {
-    path: "*",
+    path: '*',
     element: <NotFoundPage />,
   },
-]);
+])
 
-export default router;
+export default router
